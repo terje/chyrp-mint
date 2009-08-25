@@ -30,7 +30,7 @@
         show_403(__("Access Denied"), __("You do not have sufficient privileges to change settings."));
 
       if (empty($_POST))
-        return $admin->display("mint_settings");
+        return $admin->display("mintfeeder_settings");
 
       if (!isset($_POST['hash']) or $_POST['hash'] != Config::current()->secure_hashkey)
         show_403(__("Access Denied"), __("Invalid security key."));
