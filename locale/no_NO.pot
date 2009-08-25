@@ -1,0 +1,58 @@
+# Chyrp v2.1 git Translation File.
+# Copyright (C) YEAR Alex Suraci
+# This file is distributed under the same license as the Chyrp v2.1 git package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Chyrp v2.1 git\n"
+"Report-Msgid-Bugs-To: suracil.icio.us@gmail.com\n"
+"POT-Creation-Date: 2009-08-25 01:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FIRST LAST <EMAIL@EXAMPLE.COM>\n"
+"Language-Team: LANGUAGE <EMAIL@EXAMPLE.COM>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/mint/mint.php:22
+#: modules/mint/info.yaml:2
+msgid "Mint"
+msgstr ""
+
+#: modules/mint/pages/admin/mint_settings.twig:20
+msgid "Feed title"
+msgstr "Feed-navn"
+
+#: modules/mint/info.yaml:5
+msgid "Enables Mint stats in Chyrp as well as RSS tracking with the Bird Feeder pepper."
+msgstr "Gir statistikk med Mint i Chyrp og gjør mulig RSS-sporing med Bird Feeder modulen."
+
+#: modules/mint/pages/admin/mint_settings.twig:15
+#, php-format
+msgid "Enable Bird Feeder"
+msgstr "Bruk Bird Feeder"
+
+#: modules/mint/pages/admin/mint_settings.twig:10
+msgid "Mint Path"
+msgstr "Sti til Mint"
+
+#: modules/mint/pages/admin/mint_settings.twig:21
+msgid "(the title that will be shown in Mint)"
+msgstr "(navnet som blir vist i Mint)"
+
+#: modules/mint/pages/admin/mint_settings.twig:16
+msgid "enabled"
+msgstr "i bruk"
+
+#: modules/mint/pages/admin/mint_settings.twig:11
+msgid "The folder, relative to your Chyrp install, where Mint is installed. You can use /../ to go up one folder."
+msgstr "Folderen, relativ til der Chyrp er installert, som Mint er installert i.  Du kan bruke /../ for å gå opp ett nivå."
+
+#: modules/mint/pages/admin/mint_settings.twig:3
+#: modules/mint/pages/admin/mint_settings.twig:6
+msgid "Mint Settings"
+msgstr "Innstillinger for Mint"
+

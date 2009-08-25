@@ -1,0 +1,9 @@
+name: Mint
+url: http://thedailyt.com/chyrp-mint
+version: 1.0
+description: Enables Mint stats in Chyrp as well as RSS tracking with the Bird Feeder pepper.
+author:
+  name: Terje Tjervaag
+  url: http://thedailyt.com
+notifications:
+confirm:
