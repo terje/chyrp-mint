@@ -1,4 +1,4 @@
-name: Mint
+name: Mint Feeder
 url: http://terje.github.com/chyrp-mint
 version: 1.0
 description: Enables Mint stats in Chyrp as well as RSS tracking with the Bird Feeder pepper.

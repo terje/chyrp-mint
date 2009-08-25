@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chyrp v2.1 git\n"
 "Report-Msgid-Bugs-To: suracil.icio.us@gmail.com\n"
-"POT-Creation-Date: 2009-08-25 01:31+0000\n"
+"POT-Creation-Date: 2009-08-25 12:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FIRST LAST <EMAIL@EXAMPLE.COM>\n"
 "Language-Team: LANGUAGE <EMAIL@EXAMPLE.COM>\n"
@@ -17,42 +17,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/mint/mint.php:22
-#: modules/mint/info.yaml:2
-msgid "Mint"
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:20
+msgid "Feed title"
 msgstr ""
 
-#: modules/mint/pages/admin/mint_settings.twig:20
-msgid "Feed title"
-msgstr "Feed-navn"
-
-#: modules/mint/info.yaml:5
+#: modules/mintfeeder/info.yaml:5
 msgid "Enables Mint stats in Chyrp as well as RSS tracking with the Bird Feeder pepper."
 msgstr "Gir statistikk med Mint i Chyrp og gjør mulig RSS-sporing med Bird Feeder modulen."
 
-#: modules/mint/pages/admin/mint_settings.twig:15
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:15
 #, php-format
 msgid "Enable Bird Feeder"
 msgstr "Bruk Bird Feeder"
 
-#: modules/mint/pages/admin/mint_settings.twig:10
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:10
 msgid "Mint Path"
 msgstr "Sti til Mint"
 
-#: modules/mint/pages/admin/mint_settings.twig:21
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:21
 msgid "(the title that will be shown in Mint)"
 msgstr "(navnet som blir vist i Mint)"
 
-#: modules/mint/pages/admin/mint_settings.twig:16
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:16
 msgid "enabled"
 msgstr "i bruk"
 
-#: modules/mint/pages/admin/mint_settings.twig:11
+#: modules/mintfeeder/info.yaml:2
+msgid "Mint Feeder"
+msgstr ""
+
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:11
 msgid "The folder, relative to your Chyrp install, where Mint is installed. You can use /../ to go up one folder."
 msgstr "Folderen, relativ til der Chyrp er installert, som Mint er installert i.  Du kan bruke /../ for å gå opp ett nivå."
 
-#: modules/mint/pages/admin/mint_settings.twig:3
-#: modules/mint/pages/admin/mint_settings.twig:6
-msgid "Mint Settings"
-msgstr "Innstillinger for Mint"
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:3
+#: modules/mintfeeder/pages/admin/mintfeeder_settings.twig:6
+msgid "Mint Feeder Settings"
+msgstr "Innstillinger for Mint Feeder"
 
+
+#: modules/mintfeeder/mint.php:22
+#: modules/mintfeeder/info.yaml:2
+msgid "Mint"
+msgstr ""
