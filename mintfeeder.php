@@ -1,6 +1,6 @@
 <?php
 
-  class Mint extends Modules {
+  class Mintfeeder extends Modules {
 
     private $birdfeeder;
 
@@ -20,17 +20,17 @@
 
     public function settings_nav($navs) {
       if (Visitor::current()->group->can("change_settings"))
-        $navs["mint_settings"] = array("title" => __("Mint", "mint"));
+        $navs["mintfeeder_settings"] = array("title" => __("Mint", "mint"));
 
       return $navs;
     }
 
-    public function admin_mint_settings($admin) {
+    public function admin_mintfeeder_settings($admin) {
       if (!Visitor::current()->group->can("change_settings"))
         show_403(__("Access Denied"), __("You do not have sufficient privileges to change settings."));
 
       if (empty($_POST))
-        return $admin->display("mint_settings");
+        return $admin->display("mintfeeder_settings");
 
       if (!isset($_POST['hash']) or $_POST['hash'] != Config::current()->secure_hashkey)
         show_403(__("Access Denied"), __("Invalid security key."));
@@ -46,7 +46,7 @@
       );
 
       if (!in_array(false, $set))
-        Flash::notice(__("Settings updated."), "/admin/?action=mint_settings");
+        Flash::notice(__("Settings updated."), "/admin/?action=mintfeeder_settings");
 
     }
 

@@ -1,0 +1,32 @@
+{% extends "layout.twig" %}
+
+{% block title %}${ "Mint Feeder Settings" | translate("mintfeeder") }{% endblock %}
+
+{% block content %}
+  <h1>${ "Mint Feeder Settings" | translate("mintfeeder") }</h1>
+  <form id="mintfeeder_settings" class="split" action="{% admin "mintfeeder_settings" %}" method="post">
+    <fieldset>
+      <p>
+        <label for="mint_path">${ "Mint Path" | translate("mintfeeder") }</label>
+        <input class="text" type="text" name="mint_path" value="${ site.mint_path | escape }" id="mint_path" /><small>${ "The folder, relative to your Chyrp install, where Mint is installed. You can use /../ to go up one folder." | translate("mintfeeder") }</small>
+      </p>
+
+      <p>
+        <label for="enable_birdfeeder">${ "Enable Bird Feeder" | translate("mintfeeder") | format("<input class=\"text\" type=\"text\" name=\"enable_birdfeeder\" value=\"" ~ site.enable_birdfeeder | escape ~ "\" size=\"2\" id=\"enable_birdfeeder\" />") }</label>
+        <input type="checkbox" class="checkbox" name="enable_birdfeeder"${ site.enable_birdfeeder | checked } /> ${ "enabled" | translate("mintfeeder") }
+      </p>
+
+      <p>
+        <label for="mint_feed_title">${ "Feed title" | translate("mintfeeder") }</label>
+        <input class="text" type="text" name="mint_feed_title" value="${ site.mint_feed_title | escape }" id="mint_feed_title" /> <span class="sub">${ "(the title that will be shown in Mint)" | translate("mintfeeder") }</span>
+      </p>
+
+      <p class="buttons">
+        <p>
+          <button type="submit" class="yay"><img src="themes/default/images/icons/success.png" alt="success" />${ "Update" | translate }</button>
+        </p>
+      </p>
+
+      <input type="hidden" name="hash" value="$site.secure_hashkey" id="hash" />
+    </fieldset>
+{% endblock %}
