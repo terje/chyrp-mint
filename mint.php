@@ -5,6 +5,7 @@
     private $birdfeeder;
 
     public function head() {
+      $config = Config::current();
       # Insert the Mint javascript
       echo '<script src="' . $config->mint_path . '/?js" type="text/javascript"></script>';
     }
